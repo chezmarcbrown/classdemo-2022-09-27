@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Sample ELements
+    </title>
+    <style> div {margin:20px} </style>
+  </head>
+  <body>
+    <form action="/action_page.php">
+
+      <div>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat" selected>Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+          <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </optgroup>
+          <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Personalia:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </div>
+
+      <div>  
+        <label for="br">Choose a browser:</label>
+        <input name="br" id="br" list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </div>
+      
+      <div>
+        <textarea name="message" rows="10" cols="30">
+          The cat was playing in the garden.
+        </textarea>
+      </div>
+
+      <div>
+        <button type="button">Click Me!</button>
+        <input type="submit">
+        <button type="reset">RESET</button>
+      </div>
+
+    </form>
+  </body>
+</html>
